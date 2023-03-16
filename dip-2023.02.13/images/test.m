@@ -1,0 +1,10 @@
+I = imread('D:\dip\images\lena.png');
+h = histogram(I);
+H = cumHist(h);
+I2 = eqHist(H,I);
+h2 = histogram(I);
+H2 = cumHist(h2);
+subplot(1,4,1);imshow(rgb2gray(I));hold on;
+subplot(1,4,2);bar(H);hold on;
+subplot(1,4,3);bar(I2);hold on;
+subplot(1,4,4);bar(H2);

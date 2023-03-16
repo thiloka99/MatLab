@@ -1,0 +1,185 @@
+%-- 2/1/2023 2:02 PM --%
+ver
+cd D:
+cd dip
+a=5;
+disp(a)
+b=3;
+c=a+b;
+disp(c)
+d=a-b
+e=a*b
+f=a/b;
+disp(f)
+m=55;
+if(m<50)
+disp('pass')
+end
+if(m<50)
+disp('pass');
+end
+if(m>50)
+disp('pass');
+end
+m=40;
+if(m>50)
+disp('Pass');
+else
+disp('Fail');
+end
+for i=1:10
+disp(i);
+end
+for i=1:2:10
+disp(i);
+end
+for i=10:-2:1
+disp(i);
+end
+x=[2 4 6 8 10];
+disp(x)
+y=[1,3,5,7,9];
+disp(y)
+z=[1;3;5;7;9];
+z
+disp(z);
+x(3)
+x(3)=[];
+x
+x(2)=x(2)+1;
+x(2)
+length(x)
+y(2:4)
+y(2:1:4)
+y(4:-1:2)
+y(end)
+y(init)
+p=rand(1,10);
+p
+q=rand(1,10);
+q
+r=p+q;
+r
+clc
+clear y
+clear a
+clear d,e
+clear d e
+clear all
+x=rand(1,10);
+x
+x'
+%-- 2/9/2023 1:30 PM --%
+A=[2,3,0;4,5,2]
+A(1,2)
+A(2,2)=6;
+A
+A(:3)=[];
+A(:,3)=[];
+A
+A(2,:)=[];
+A
+B=[1,1,2,4;2,3,5,0;-1,2,1,1];
+B
+size(B)
+[1,2]=size(B);
+[row.col]=size(B);
+[row,col]=size(B);
+row
+col
+r=size(B,1)
+x=[2,1,1,0,-1,1,2,3,4,1];
+reshape(x,5,2)
+y=reshape(x,5,2);
+y
+y(end,:)
+y'
+y(5:1)
+P=[2,3;1,2];
+Q=[5,1];
+R[P;Q]
+R=[P;Q]
+S=[P,Q']
+T=S(:,1:2);
+T
+M=R*S;
+M
+clc
+x=[1,1,1,1,1,1];
+x=ones(1,6)
+x=ones(1,6)*5;
+x=ones(1,6)*5
+x=ones(1,6)*0;
+x=ones(1,6)*0
+x=zeros(1,5)
+ones(3,3)
+help repmat
+doc repmat
+cd \
+cd D:
+cd dip;
+I=imread('.\images\lena.png');
+imshow(I);
+J=rgb2gray(I);
+imshow(J);
+imwrite('J','images\lenagray.png');
+imwrite(J,'images\lenagray.png');
+subplot(1,2,1);imshow(I);hold on;
+subplot(1,2,2);imshow(J);
+help title
+K=rgb2gray(J);
+clc
+size(I)
+size(J)
+length(size(I))
+histogram
+I=imread(.\images\lena.jpg');
+I=imread('.\images\lena.jpg');
+I=imread('.\images\lena.png');
+h=histogram(I);
+bar(h);
+%-- 2/13/2023 10:21 AM --%
+help histogram
+H = cumHist(h);
+h = histogram(I);
+I = imread('.\images\lena.png');
+I = imread('.dip\images\lena.png');
+I = imread('.D:\dip\images\lena.png');
+I = imread('.Data\dip\images\lena.png');
+I = imread('D:\dip\images\lena.png');
+subplot(1,3,1);imshow(rgb2gray(I));
+hold on;subplot(1,3,2);
+bar(h);hold on;
+h = histogram(I);
+subplot(1,3,3);bar(H);
+H = cumHist(h);
+subplot(1,3,3);bar(H);
+subplot(1,3,1);imshow('D:\dip\images\lena.png');
+hold on;subplot(1,3,2);
+bar(h);hold on;
+subplot(1,3,3);bar(H);
+I = imread('D:\dip\images\lena.png');
+h = histogram(I);;
+h = histogram(I);
+H = cumHist(h);
+I2 = eqHist(H,I);
+clc
+test
+clc
+test
+clc
+I = imread('D:\dip\images\lena.png');
+J = brightness(I,50);
+subplot(1,2,1);imshow(rgb2gray(I));
+hold on;subplot(1,2,2);imshow(J);
+J = brightness(I,-20);
+J = brightness(I,200);
+subplot(1,2,1);imshow(rgb2gray(I));
+hold on;subplot(1,2,2);imshow(J);
+J = brightness(I,-20);
+subplot(1,2,1);imshow(rgb2gray(I));
+hold on;subplot(1,2,2);imshow(J);
+clc
+test_con
+test_inv
+test_binari
